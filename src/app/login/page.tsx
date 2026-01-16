@@ -4,8 +4,8 @@ import { useState, useEffect, useCallback } from 'react';
 import { useRouter } from 'next/navigation';
 import Link from 'next/link';
 import { Mail, Lock, LogIn } from 'lucide-react';
-import useAuthStore from '@/app/store/authStore';
-import ErrorMessage from '@/app/components/ErrorMessage';
+import useAuthStore from '@/store/authStore';
+import ErrorMessage from '@/components/ErrorMessage';
 
 const Login = () => {
   const router = useRouter();

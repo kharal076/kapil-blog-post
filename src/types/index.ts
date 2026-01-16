@@ -13,11 +13,12 @@ export interface AuthState {
   isAuthenticated: boolean;
   setAuth: (user: User, token: string) => void;
   logout: () => void;
-  updateUser: (user: User) => void;
+  updateUser: (user: Partial<User>) => void;
 }
 
 // Post types
 export interface Post {
+  data: Post;
   id: number;
   title: string;
   body: string;

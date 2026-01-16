@@ -4,8 +4,8 @@ import { useState, useCallback, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 import Link from 'next/link';
 import { Mail, Lock, User as UserIcon, UserPlus } from 'lucide-react';
-import useAuthStore from '@/app/store/authStore';
-import ErrorMessage from '@/app/components/ErrorMessage';
+import useAuthStore from '@/store/authStore';
+import ErrorMessage from '@/components/ErrorMessage';
 
 const Register = () => {
   const router = useRouter();
